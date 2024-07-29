@@ -16,7 +16,6 @@
 	<description>Componente core del ecosistema de servicios</description>
 	<properties>
 		<java.version>21</java.version>
-
 	</properties>
 	<developers>
 		<developer>
