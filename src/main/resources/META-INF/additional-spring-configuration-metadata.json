@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "application.title",
+    "type": "java.lang.String",
+    "description": "A description for 'application.title'"
+  },
+  {
+    "name": "application.version",
+    "type": "java.lang.String",
+    "description": "A description for 'application.version'"
+  },
+  {
+    "name": "openapi.url",
+    "type": "java.lang.String",
+    "description": "A description for 'openapi.url'"
+  },
+  {
+    "name": "crypto.secretkey",
+    "type": "java.lang.String",
+    "description": "A description for 'crypto.secret-key'"
+  },
+  {
+    "name": "crypto.transformation",
+    "type": "java.lang.String",
+    "description": "A description for 'crypto.transformation'"
+  },
+  {
+    "name": "crypto.algorithm",
+    "type": "java.lang.String",
+    "description": "A description for 'crypto.algorithm'"
+  },
+  {
+    "name": "crypto.ivsize",
+    "type": "java.lang.String",
+    "description": "A description for 'crypto.iv-size'"
+  }
+]}
