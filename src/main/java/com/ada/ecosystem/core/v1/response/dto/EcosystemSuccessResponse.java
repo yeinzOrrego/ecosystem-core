@@ -68,6 +68,18 @@ public class EcosystemSuccessResponse<T> {
     public EcosystemSuccessResponse(T object, String message) {
         this.response = new EcosystemSuccessDTO<>(object, message);
     }
+    
+    /**
+     * Instantiates a new success response.
+     *
+     * @author Carlos Torres - torrescamargo@gmail.com
+     * @version 0.0.2
+     * @param object the object
+     * @param message the message
+     */
+    public EcosystemSuccessResponse(T object, String message, int statusCode) {
+    	this.response = new EcosystemSuccessDTO<>(object, message, statusCode);
+    }
 
     /**
      * Instantiates a new success response.

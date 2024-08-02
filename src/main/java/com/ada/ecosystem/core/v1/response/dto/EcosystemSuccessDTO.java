@@ -27,6 +27,9 @@ public class EcosystemSuccessDTO<T> implements java.io.Serializable {
     /** The message. */
     private String message = null;
     
+    /** The statusCode. */
+    private int statusCode;
+    
     /** The log process. */
     private StringBuilder logProcess;
     
@@ -84,6 +87,29 @@ public class EcosystemSuccessDTO<T> implements java.io.Serializable {
         if (this.body instanceof Map) {
             this.length = ((Map<?, ?>) this.body).size();
         }
+    }
+    
+    
+    /**
+     * Instantiates a new success DTO.
+     *
+     * @author Carlos Torres - carlos.torres@ada.co
+     * @version 0.0.2
+     * @param body the body
+     * @param message the message
+     */
+    public EcosystemSuccessDTO(T body, String message, int statusCode) {
+    	this.body = body;
+    	this.message = message;
+    	this.statusCode = statusCode;
+    	
+    	if (this.body instanceof List) {
+    		this.length = ((List<?>) this.body).size();
+    	}
+    	
+    	if (this.body instanceof Map) {
+    		this.length = ((Map<?, ?>) this.body).size();
+    	}
     }
 
     /**
@@ -217,5 +243,15 @@ public class EcosystemSuccessDTO<T> implements java.io.Serializable {
 	 */
 	public void setLogProcess(StringBuilder logProcess) {
 		this.logProcess = logProcess;
+	}
+
+	public int getStatusCode() {
+		return statusCode;
+	}
+
+	public void setStatusCode(int statusCode) {
+		this.statusCode = statusCode;
 	}    
+	
+	
 }

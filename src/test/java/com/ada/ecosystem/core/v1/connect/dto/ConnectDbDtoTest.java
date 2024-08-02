@@ -168,4 +168,6 @@ public class ConnectDbDtoTest {
         String expectedToString = "ConnectDbDto(connectDbId=100, connectCode=ada-prod, connectUrl=jdbc:oracle:thin:@//ip:port/dbname, connectUsername=presup01, connectPassword=presup01, connectDriver=oracle.jdbc.driver.OracleDriver, connectPlatform=org.hibernate.dialect.Oracle8iDialect, connectIp=127.0.0.1, connectPort=1521, connectService=sicof, dateCreated=" + dto.getDateCreated() + ", userCreated=5678, status=A)";
         assertEquals(expectedToString, dto.toString());
     }
+    
+    
 }

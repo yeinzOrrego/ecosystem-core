@@ -22,6 +22,10 @@ public class EcosystemError {
 	/** The status. */
 	@Schema(description = "Código HTTP de devolución que genera en el error.")
     private HttpStatus status;
+	
+	/** The status. */
+	@Schema(description = "Código HTTP de devolución que genera en el error.")
+	private int statusCode;
     
 	
     /** The message. */
@@ -192,4 +196,25 @@ public class EcosystemError {
         solutions = Arrays.asList(solution);
         this.logProcess = logProcess;
     }
+    
+    /**
+     * Instantiates a new ecosystem error.
+     *
+     * @param status the status
+     * @param message the message
+     * @param error the error
+     * @param solution the solution
+     * @param logProcess the log process
+     */
+    public EcosystemError(final HttpStatus status, int statusCode, final String message, final List<String> errors, final List<String> solutions) {
+    	super();
+        this.status = status;
+    	this.statusCode = statusCode;
+    	this.message = message;
+        this.errors = errors;
+        this.solutions = solutions;
+        logProcess = new StringBuilder();
+    }
+    
+
 }
