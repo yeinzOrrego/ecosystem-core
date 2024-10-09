@@ -24,6 +24,11 @@ public abstract class DataSourceConfigBase implements IDataSourceConfig {
 	/** The log. */
 	Logger log = LoggerFactory.getLogger(DataSourceConfigBase.class); 
 	
+
+	
+	
+
+	
 	/**
 	 * Data source.
 	 *
@@ -73,4 +78,5 @@ public abstract class DataSourceConfigBase implements IDataSourceConfig {
 		dataSource.setDriverClassName(connectDbDto.getConnectDriver());
 		return dataSource;
 	}
+
 }
