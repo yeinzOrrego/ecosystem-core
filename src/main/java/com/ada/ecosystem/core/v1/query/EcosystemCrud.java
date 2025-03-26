@@ -1,8 +1,11 @@
+
 package com.ada.ecosystem.core.v1.query;
 
 import java.util.List;
 
-import com.ada.ecosystem.core.v1.exceptions.EcosystemException;
+import com.ada.ecosystem.connections.v1.exception.EcosystemException;
+
+
 
 /**
  * The Interface EcosystemCrud.
@@ -11,14 +14,14 @@ import com.ada.ecosystem.core.v1.exceptions.EcosystemException;
  * @param <T> id generic type
  */
 public interface EcosystemCrud<D, T> {
-	
+
 	/**
 	 * Read.
 	 *
 	 * @return the list
 	 */
 	public List<D> read();
-	
+
 	/**
 	 * Read only one.
 	 *
@@ -27,7 +30,7 @@ public interface EcosystemCrud<D, T> {
 	 * @throws Exception the exception
 	 */
 	public D readOnlyOne(T id) throws EcosystemException;
-	
+
 	/**
 	 * Creates the.
 	 *
@@ -36,17 +39,17 @@ public interface EcosystemCrud<D, T> {
 	 * @throws Exception the exception
 	 */
 	public D create(D register) throws EcosystemException;
-	
+
 	/**
 	 * Update.
 	 *
-	 * @param id the id
+	 * @param id       the id
 	 * @param register the register
 	 * @return the d
 	 * @throws Exception the exception
 	 */
 	public D update(T id, D register) throws EcosystemException;
-	
+
 	/**
 	 * Delete.
 	 *

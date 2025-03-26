@@ -25,6 +25,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.ada.ecosystem.connections.v1.response.EcosystemSuccessResponse;
 import com.ada.ecosystem.core.v1.enums.ExecutionContext;
 import com.ada.ecosystem.core.v1.enums.RomanNumeral;
 import com.ada.ecosystem.core.v1.kafka.KafkaMessage;
@@ -32,7 +33,6 @@ import com.ada.ecosystem.core.v1.kafka.Status;
 import com.ada.ecosystem.core.v1.kafka.TaskSend;
 import com.ada.ecosystem.core.v1.kafka.TaskStatus;
 import com.ada.ecosystem.core.v1.process.ProcessResult;
-import com.ada.ecosystem.core.v1.response.dto.EcosystemSuccessResponse;
 
 import jakarta.servlet.http.HttpServletRequest;
 

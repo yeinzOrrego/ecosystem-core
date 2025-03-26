@@ -15,23 +15,23 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class DataSourceConfig implements WebMvcConfigurer {
 	
 
-	/** The log. */
-	private static Logger log = LoggerFactory.getLogger(DataSourceConfig.class);
-	@Autowired
-    private DatasourceInterceptor datasourceInterceptor;
-	
-	@Override
-    public void addInterceptors(InterceptorRegistry registry) {
-		log.info("addInterceptors: DatasourceInterceptor");
-		DatabaseContextHolder.clearDatabaseContext();
-		
-		log.info("[DataSourceConfig] [addInterceptors]  nuevo intercerptor addInterceptors: DatasourceInterceptor");
-        registry.addInterceptor(datasourceInterceptor).addPathPatterns("/**");
-        WebMvcConfigurer.super.addInterceptors(registry);
-    }
-	
-    @Bean
-    public DatasourceInterceptor datasourceInterceptor() {
-        return new DatasourceInterceptor();
-    }
+//	/** The log. */
+//	private static Logger log = LoggerFactory.getLogger(DataSourceConfig.class);
+//	@Autowired
+//    private DatasourceInterceptor datasourceInterceptor;
+//	
+//	@Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//		log.info("addInterceptors: DatasourceInterceptor");
+//		DatabaseContextHolder.clearDatabaseContext();
+//		
+//		log.info("[DataSourceConfig] [addInterceptors]  nuevo intercerptor addInterceptors: DatasourceInterceptor");
+//        registry.addInterceptor(datasourceInterceptor).addPathPatterns("/**");
+//        WebMvcConfigurer.super.addInterceptors(registry);
+//    }
+//	
+//    @Bean
+//    public DatasourceInterceptor datasourceInterceptor() {
+//        return new DatasourceInterceptor();
+//    }
 }

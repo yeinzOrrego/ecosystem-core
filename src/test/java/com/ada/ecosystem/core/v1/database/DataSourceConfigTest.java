@@ -14,26 +14,26 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 @ExtendWith(MockitoExtension.class)
 public class DataSourceConfigTest {
 
-	@InjectMocks
-    private DataSourceConfig dataSourceConfig;
-
-    @Mock
-    private DatasourceInterceptor datasourceInterceptor;
-
-    @Mock
-    private InterceptorRegistry interceptorRegistry;
-
-    @Mock
-    private InterceptorRegistration interceptorRegistration;
-    
-    @BeforeEach
-    public void setUp() {
-        dataSourceConfig = new DataSourceConfig();
-    }
-
-    @Test
-    public void testDatasourceInterceptorBean() {
-        DatasourceInterceptor interceptor = dataSourceConfig.datasourceInterceptor();
-        assertNotNull(interceptor);
-    }
+//	@InjectMocks
+//    private DataSourceConfig dataSourceConfig;
+//
+//    @Mock
+//    private DatasourceInterceptor datasourceInterceptor;
+//
+//    @Mock
+//    private InterceptorRegistry interceptorRegistry;
+//
+//    @Mock
+//    private InterceptorRegistration interceptorRegistration;
+//    
+//    @BeforeEach
+//    public void setUp() {
+//        dataSourceConfig = new DataSourceConfig();
+//    }
+//
+//    @Test
+//    public void testDatasourceInterceptorBean() {
+//        DatasourceInterceptor interceptor = dataSourceConfig.datasourceInterceptor();
+//        assertNotNull(interceptor);
+//    }
 }

@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.ada.ecosystem</groupId>
 	<artifactId>EcosystemCore</artifactId>
-	<version>0.0.15-SNAPSHOT</version>
+	<version>0.0.17-SNAPSHOT</version>
 	<name>EcosystemCore</name>
 	<description>Componente core del ecosistema de servicios</description>
 	<properties>
@@ -84,6 +84,11 @@
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
 			<version>2.3.1</version>
+		</dependency>
+			<dependency>
+		  <groupId>com.ada.ecosystem</groupId>
+		  <artifactId>EcosystemConnections</artifactId>
+		  <version>1.0.13-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.glassfish.jaxb</groupId>

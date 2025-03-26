@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
-import com.ada.ecosystem.core.v1.exceptions.EcosystemException;
 
 /**
  * The Interface IDataSourceConfig.
@@ -26,7 +25,7 @@ public interface IDataSourceConfig {
 	@Bean
 	@Primary
 	@Autowired
-	DataSource dataSource() throws EcosystemException;
+	DataSource dataSource() ;
 	
 	/**
 	 * Entity manager factory bean.
