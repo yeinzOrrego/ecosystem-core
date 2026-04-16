@@ -115,10 +115,4 @@
 		</plugins>
 	</build>
 
-	<distributionManagement>
-		<snapshotRepository>
-			<id>ecosystem-ada-snapshots</id>
-			<url>http://10.1.40.130:8081/repository/ecosystem-ada-snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
 </project>
