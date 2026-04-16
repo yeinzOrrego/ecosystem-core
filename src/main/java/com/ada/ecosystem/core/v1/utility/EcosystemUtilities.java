@@ -25,7 +25,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.ada.ecosystem.connections.v1.response.EcosystemSuccessResponse;
 import com.ada.ecosystem.core.v1.enums.ExecutionContext;
 import com.ada.ecosystem.core.v1.enums.RomanNumeral;
 import com.ada.ecosystem.core.v1.kafka.KafkaMessage;

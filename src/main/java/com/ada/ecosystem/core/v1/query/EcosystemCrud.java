@@ -3,7 +3,7 @@ package com.ada.ecosystem.core.v1.query;
 
 import java.util.List;
 
-import com.ada.ecosystem.connections.v1.exception.EcosystemException;
+import com.ada.ecosystem.core.v1.exceptions.EcosystemException;
 
 
 
